@@ -66,3 +66,7 @@ Contributors
 * Mark Galloway
 * Abram Hindle
 * Cole Mackenzie
+
+Collaboration
+============
+I did not collaborate with any students or other persons for this assignment.
