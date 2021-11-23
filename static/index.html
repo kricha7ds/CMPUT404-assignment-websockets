@@ -53,13 +53,17 @@ function drawCircle(context,entity) {
         var y = entity["y"];
         moveTo(x,y);
         // fillStyle = entity["colour"];
-        strokeStyle = 'rebeccapurple';
+        var r = Math.floor(Math.random() * 255);
+        var g = Math.floor(Math.random() * 255);
+        var b = Math.floor(Math.random() * 255);
+        // fillStyle = rgb(Math.floor(Math.random() * 255), Math.floor(Math.random() * 255), Math.floor(Math.random() * 255));
+        fillStyle = 'rgb(' + r + ', ' + g + ', ' + b + ')';
+        strokeStyle = fillStyle;
         // strokeStyle = '#09f';
         lineCap = 'butt';
         
         arc(x, y, (entity["radius"])?entity["radius"]:50, 0, 2.0 * Math.PI, false);  
 
-        // cool 3d-like effect, even though we're using a 2D context!
         context.bezierCurveTo(800, 200, 1200, 700, 1200, 400);
         stroke();                                
     }
