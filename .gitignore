@@ -35,3 +35,9 @@ nosetests.xml
 .project
 .pydevproject
 *~
+
+# Environments
+/venv
+
+# misc
+.DS_Store
