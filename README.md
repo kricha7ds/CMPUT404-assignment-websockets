@@ -16,6 +16,13 @@ virtualenv venv --python=python3
 source venv/bin/activate
 pip install -r requirements.txt
 ```
+References
+=======
+WS examples
+* [code from Dr. Hindle's in-class examples](https://github.com/uofa-cmput404/cmput404-slides/blob/master/examples/WebSocketsExamples/chat.py)
+
+Creating random colour gradients
+* [Canvas API via MDN](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillStyle#creating_multiple_fill_colors_using_loops)
 
 Contributors / Licensing
 ========================
