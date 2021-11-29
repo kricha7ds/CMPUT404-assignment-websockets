@@ -44,6 +44,7 @@ debug("Test");
 
 world = {};
 
+// Code Reference (AS4): https://github.com/kricha7ds/CMPUT404-assignment-ajax/blob/master/static/index.html
 //XXX: TODO Make this prettier!
 function drawCircle(context,entity) {
     with(context) {
@@ -53,6 +54,8 @@ function drawCircle(context,entity) {
         var y = entity["y"];
         moveTo(x,y);
         // fillStyle = entity["colour"];
+        
+        // https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillStyle#creating_multiple_fill_colors_using_loops
         var r = Math.floor(Math.random() * 255);
         var g = Math.floor(Math.random() * 255);
         var b = Math.floor(Math.random() * 255);
@@ -68,6 +71,7 @@ function drawCircle(context,entity) {
         stroke();                                
     }
 }
+// End Code Reference
 
 function prepEntity(entity) {
     if (!entity["colour"]) {
@@ -240,6 +244,7 @@ mouse = (function() {
 
 // Add the application specific mouse listeners!
 //XXX: TODO Make these prettier!
+// Code Reference (AS4): https://github.com/kricha7ds/CMPUT404-assignment-ajax/blob/master/static/index.html
 mouse.mousedowners.push(function(x,y,clicked,e) {
     addEntityWithoutName({'x':x,'y':y,'colour':'cyan', 'radius':20});
 });
@@ -252,6 +257,7 @@ mouse.mousedraggers.push(function(x,y,clicked,e) {
     addEntityWithoutName({'x':x,'y':y,'colour':'cyan',
                           'radius':10});
 });
+// End Code Reference
 
 
 function update() {
