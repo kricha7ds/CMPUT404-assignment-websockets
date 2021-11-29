@@ -24,6 +24,9 @@ WS examples
 Creating random colour gradients
 * [Canvas API via MDN](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillStyle#creating_multiple_fill_colors_using_loops)
 
+Other canvas API styling
+* [from my code - AS4: AJAX](https://github.com/kricha7ds/CMPUT404-assignment-ajax/blob/master/static/index.html)
+
 Contributors / Licensing
 ========================
 
